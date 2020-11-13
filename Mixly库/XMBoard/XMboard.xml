@@ -1,0 +1,22 @@
+<!-- type="company" 
+block="block/XMBoard.js"
+generator="generator/XMBoard.js" 
+media="media/XMBoard" 
+lib="XMBoard"
+language="language/XMBoard" -->
+
+<!-- 本文件模块名称种类文件路径-->
+<script type="text/javascript" src="../../blocks/company/XMBoard.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/XMBoard.js"></script>
+
+<category id="caXMBoard" name="XMBoard" colour="40">
+
+<category id="catArduBitsSensor" name="传感器" colour="60">
+
+		<block type="ArduBits_DHT11_TP" name="温湿度传感_获取温湿">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+		</block>

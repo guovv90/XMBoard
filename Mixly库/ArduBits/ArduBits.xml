@@ -1,0 +1,1156 @@
+<!-- type="company" block="block/ArduBits.js" generator="generator/ArduBits.js" media="media/ArduBits" lib="ArduBits" hardware="hardware/arduino" language="language/ArduBits" -->
+
+<!-- 本文件模块名称种类文件路径-->
+<script type="text/javascript" src="../../blocks/company/ArduBits.js"></script>
+<script type="text/javascript" src="../../generators/arduino/company/ArduBits.js"></script>
+
+<category id="caArduBits" name="ArduBits" colour="40">
+
+	<category id="catArduBitsSensor" name="传感器" colour="60">
+
+		<block type="ArduBits_DHT11_TP" name="温湿度传感_获取温湿">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_SR04_Distance" name="超声波测距_获取距离">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_RTC_set_time" name="实时时钟块_设置时间">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="hour">
+				<shadow type="math_number">
+					<field name="NUM">12</field>
+				</shadow>
+			</value>
+			<value name="minute">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="second">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_RTC_set_date" name="实时时钟块_设置日期">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="year">
+				<shadow type="math_number">
+					<field name="NUM">2017</field>
+				</shadow>
+			</value>
+			<value name="month">
+				<shadow type="math_number">
+					<field name="NUM">8</field>
+				</shadow>
+			</value>
+			<value name="day">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_RTC_get_time" name="实时时钟块_获取时间">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_ADXL345" name="重力感应块_获取数据">
+
+		</block>
+
+		<block type="ArduBits_RFID" name="ID射频读卡_获取数据">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_HX711_Weight" name="电子称重块_获取称重">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">350</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_Brainwave" name="脑电波采集_获取数据">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+
+		<block type="ArduBits_TCS34725" name="颜色识别_获取数据">
+		</block>
+
+		<block type="ArduBits_GPS_ATGM_PARSE" name="GPS_解析数据">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+
+		<block type="ArduBits_GPS_LON_LAT" name="GPS_获取数据_经纬度_高度">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+
+		<block type="ArduBits_Gesture_APDS" name="手势识别">
+		</block>
+
+	</category>
+
+	<category id="catArduBitsActuator" name="执行器" colour="240">
+
+		<block type="ArduBits_QJ004_FUN" name="音乐播放_功能选择">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_QJ004_SONG" name="音乐播放_指定曲目">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+
+
+		<block type="ArduBits_OLED_Clear" name="液晶显示器_显示操作">
+		</block>
+
+		<block type="ArduBits_OLED_Bitmap" name="液晶显示器_数组数据">
+		</block>
+
+		<block type="ArduBits_OLED_POS" name="液晶显示器_画点显示">
+			<value name="XVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="YVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_OLED_Display" name="液晶显示器_多行显示">
+			<value name="MNUM">
+				<shadow type="math_number">
+					<field name="NUM">2</field>
+				</shadow>
+			</value>
+			<value name="TEXT1">
+				<shadow type="text">
+					<field name="TEXT"> ArduBits1</field>
+				</shadow>
+			</value>
+			<value name="TEXT2">
+				<shadow type="text">
+					<field name="TEXT"> ArduBits2</field>
+				</shadow>
+			</value>
+			<value name="TEXT3">
+				<shadow type="text">
+					<field name="TEXT"> ArduBits3</field>
+				</shadow>
+			</value>
+			<value name="TEXT4">
+				<shadow type="text">
+					<field name="TEXT"> ArduBits4</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_OLED_Print" name="液晶显示器_显示字符">
+			<value name="XVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="YVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="MNUM">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="TEXT">
+				<shadow type="text">
+					<field name="TEXT">ArduBits</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_OLED_showBitmap" name="液晶显示器_中文字符">
+			<value name="XVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="YVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="WIDTH">
+				<shadow type="math_number">
+					<field name="NUM">48</field>
+				</shadow>
+			</value>
+			<value name="HEIGHT">
+				<shadow type="math_number">
+					<field name="NUM">48</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_TM1650_CLEAR" name="四位数码管_操作清除">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_TM1650_Display" name="四位数码管_字符显示">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="TEXT">
+				<shadow type="text">
+					<field name="TEXT">STEM</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_TM1650_DOT" name="四位数码管_小数点控">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+
+
+
+
+		<block type="ArduBits_Matrix_CLEAR" name="点阵屏显示_清除屏幕">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_Matrix_Rotation" name="点阵屏显示_显示旋转">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_Matrix_TEXT" name="点阵屏显示_字符显示">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="TEXT">
+				<shadow type="text">
+					<field name="TEXT">ArduBits</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_Matrix_POS" name="点阵屏显示_画点显示">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="XVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="YVALUE">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_Matrix_DisplayChar" name="点阵屏显示_显示图案">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="PIN2">
+				<shadow type="pins_digital">
+					<field name="PIN">3</field>
+				</shadow>
+			</value>
+			<value name="Chars">
+				<block type="ArduBits_Matrix_LedArray"></block>
+			</value>
+		</block>
+
+		<block type="ArduBits_RGB" name="全彩彩灯块_颜色数选">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="_LED_">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+			<value name="RVALUE">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="GVALUE">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+			<value name="BVALUE">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_RGB2" name="全彩彩灯块_颜色表选">
+			<value name="PIN1">
+				<shadow type="pins_digital">
+					<field name="PIN">2</field>
+				</shadow>
+			</value>
+			<value name="_LED_">
+				<shadow type="math_number">
+					<field name="NUM">1</field>
+				</shadow>
+			</value>
+		</block>
+
+
+
+	</category>
+
+	<category id="catArduBitsInternet" name="物联网" colour="120">
+
+		<block type="ArduBits_WIFI_SET" name="WIFI物联网_初始设置">
+			<value name="TEXT1">
+				<shadow type="text">
+					<field name="TEXT">ArduBits</field>
+				</shadow>
+			</value>
+			<value name="TEXT2">
+				<shadow type="text">
+					<field name="TEXT">ArduBits2017</field>
+				</shadow>
+			</value>
+			<value name="TEXT3">
+				<shadow type="text">
+					<field name="TEXT"></field>
+				</shadow>
+			</value>
+			<value name="TEXT4">
+				<shadow type="text">
+					<field name="TEXT"></field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_WIFI_EDP" name="WIFI物联网_协议成功">
+		</block>
+
+		<block type="ArduBits_WIFI_TX" name="WIFI物联网_发射数据">
+			<value name="TEXT">
+				<shadow type="text">
+					<field name="TEXT">STEM</field>
+				</shadow>
+			</value>
+			<value name="NUM">
+				<shadow type="math_number">
+					<field name="NUM">0</field>
+				</shadow>
+			</value>
+		</block>
+
+		<block type="ArduBits_WIFI_TX_HZ" name="WIFI物联网_发射数据">
+			<value name="TEXT">
+				<shadow type="text">
+					<field name="TEXT">STEM</field>
+				</shadow>
+			</value>
+			<value name="TEXT1">
+				<shadow type="text">
+					<field name="TEXT">思泰姆</field>
+				</shadow>
+			</block>
+
+			<block type="ArduBits_WIFI_SENDGPS" name="WIFI_发送GPS数据">
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT">思泰姆</field>
+					</shadow>
+				</value>
+				<value name="TEXT2">
+					<shadow type="text">
+						<field name="TEXT">31.6879</field>
+					</shadow>
+				</value>
+				<value name="TEXT3">
+					<shadow type="text">
+						<field name="TEXT">119.970</field>
+					</shadow>
+				</value>
+			</block>
+
+
+			<block type="ArduBits_WIFI_Deal" name="WIFI物联网_接收处理">
+			</block>
+
+			<block type="ArduBits_WIFI_RX" name="WIFI物联网_接收名称">
+			</block>
+
+
+			<block type="ArduBits_GSM_SET" name="GSM物联网_初始设置">
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+				<value name="TEXT2">
+					<shadow type="text">
+						<field name="TEXT"></field>
+					</shadow>
+				</value>
+			</block>
+			<block type="ArduBits_GSM_EDP" name="GSM物联网_协议成功">
+			</block>
+
+
+			<block type="ArduBits_GSM_TX" name="GSM物联网_发射数据">
+				<value name="TEXT">
+					<shadow type="text">
+						<field name="TEXT">STEM</field>
+					</shadow>
+				</value>
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">0</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_GSM_TX_HZ" name="GSM物联网_发射汉字数据">
+				<value name="TEXT">
+					<shadow type="text">
+						<field name="TEXT">STEM</field>
+					</shadow>
+				</value>
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT">思泰姆</field>
+					</shadow>
+				</value>
+
+			</block>
+
+			<block type="ArduBits_GSM_SENDGPS" name="GSM_发送GPS数据">
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT">思泰姆</field>
+					</shadow>
+				</value>
+				<value name="TEXT2">
+					<shadow type="text">
+						<field name="TEXT">31.6879</field>
+					</shadow>
+				</value>
+				<value name="TEXT3">
+					<shadow type="text">
+						<field name="TEXT">119.970</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_GSM_Deal" name="GSM物联网_接收处理">
+			</block>
+
+			<block type="ArduBits_GSM_RX" name="GSM物联网_接收名称或者数据">
+			</block>
+
+
+			<block type="ArduBits_GSM_ATD" name="GSM物联网_打电话">
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">1396146921</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_GSM_AH" name="GSM物联网_接听电话_挂断电话">
+			</block>
+
+			<block type="ArduBits_GSM_RING" name="GSM物联网_来电显示">
+			</block>
+
+			<block type="ArduBits_GSM_CF" name="GSM物联网_指定收信人_信息">
+				<value name="TEXT">
+					<shadow type="text">
+						<field name="TEXT">1396146921</field>
+					</shadow>
+				</value>
+
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT">STEM</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_GSM_RXMEG" name="GSM物联网_解析短信">
+			</block>
+
+			<block type="ArduBits_GSM_GETMEG" name="GSM物联网_获取短信">
+			</block>
+
+			<block type="ArduBits_ZigBee_INT" name="ZigBee物联网_初始化_配置">
+				<value name="PIN1">
+					<shadow type="pins_digital">
+						<field name="PIN">2</field>
+					</shadow>
+				</value>
+				<value name="PIN2">
+					<shadow type="pins_digital">
+						<field name="PIN">3</field>
+					</shadow>
+				</value>
+
+				<value name="NUM3">
+					<shadow type="math_number">
+						<field name="NUM">21808</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_ZigBee_GET" name="ZigBee物联网_获取网络短地址">
+				<value name="PIN1">
+					<shadow type="pins_digital">
+						<field name="PIN">2</field>
+					</shadow>
+				</value>
+				<value name="PIN2">
+					<shadow type="pins_digital">
+						<field name="PIN">3</field>
+					</shadow>
+				</value>
+			</block>
+
+			<block type="ArduBits_ZigBee_SEND1" name="ZigBee物联网_发送数据_网络短地址">
+				<value name="PIN1">
+					<shadow type="pins_digital">
+						<field name="PIN">2</field>
+					</shadow>
+				</value>
+				<value name="PIN2">
+					<shadow type="pins_digital">
+						<field name="PIN">3</field>
+					</shadow>
+				</value>
+				<value name="NUM">
+					<shadow type="math_number">
+						<field name="NUM">65535</field>
+					</shadow>
+				</value>
+				<value name="TEXT1">
+					<shadow type="text">
+						<field name="TEXT">STEM</field>
+					</shadow>
+				</block>
+
+				<block type="ArduBits_ZigBee_SEND2" name="ZigBee物联网_发送数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+
+					<value name="TEXT1">
+						<shadow type="text">
+							<field name="TEXT">STEM</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_ZigBee_GET_MAC_DATA" name="ZigBee物联网_接收MAC数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_ZigBee_GET_NET_DATA" name="ZigBee物联网_接收NET数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+			</category>
+
+			<category id="catArduBitsAssist" name="辅助块" colour="120">
+
+				<block type="ArduBits_ASR_740_SENS" name="语音识别块_语音识别_灵敏度/音量">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">90</field>
+						</shadow>
+					</value>
+				</block>
+
+
+				<block type="ArduBits_ASR_740_START" name="语音识别块_语音识别_启动">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">2</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_ASR_740_GET" name="获取连续识别结果">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_ASR_740_AWAKE" name="唤醒">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_ASR_740_SLEEP" name="睡眠">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_SYN6288_Bitmap" name="语音合成块_数组数据">
+				</block>
+
+
+				<block type="ArduBits_SYN6288" name="语音合成块_语音合成">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+
+				<block type="ArduBits_TX433MHZ" name="超外差发射_信号发送">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+				<block type="ArduBits_BTSlave_Name" name="蓝牙数传从_蓝牙设置">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="TEXT">
+						<shadow type="text">
+							<field name="TEXT">ArduBits</field>
+						</shadow>
+					</value>
+					<value name="PIN">
+						<shadow type="math_number">
+							<field name="NUM">0000</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTSlave_BAUD" name="蓝牙数传从_波特率为">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTSlave_TX" name="蓝牙数传从_发射数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="TEXT">
+						<shadow type="text">
+							<field name="TEXT">AB</field>
+						</shadow>
+					</value>
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTSlave_RX" name="蓝牙数传从_接收数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTMaster_SET" name="蓝牙数传主_蓝牙设置">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="TEXT">
+						<shadow type="text">
+							<field name="TEXT">ArduBits</field>
+						</shadow>
+					</value>
+					<value name="PIN">
+						<shadow type="math_number">
+							<field name="NUM">0000</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTMaster_BAUD" name="蓝牙数传主_波特率为">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTMaster_TX" name="蓝牙数传主_发射数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+					<value name="TEXT">
+						<shadow type="text">
+							<field name="TEXT">AB</field>
+						</shadow>
+					</value>
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTMaster_RX" name="蓝牙数传主_接收数据">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+			</category>
+			<category id="catArduBitsattion" name="功能块" colour="300">
+
+				<block type="ArduBits_ONCE_RUN" name="单次执行">
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">0</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_S4A" name="恢复S4A使用固件">
+				</block>
+
+				<block type="ArduBits_IICSCAN" name="IIC地址查找">
+				</block>
+
+
+
+
+			</category>
+			<category id="BTArduBitsattion" name="遥控器" colour="120">
+
+
+				<block type="ArduBits_BTYK_PIN" name="蓝牙遥控器_配对密码">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTYK_FX" name="蓝牙遥控器_方向布尔">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_BTYK_FXDS" name="蓝牙遥控器_方向行程">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+
+				<block type="ArduBits_BTYK_Button" name="蓝牙遥控器_按键数值">
+					<value name="PIN1">
+						<shadow type="pins_digital">
+							<field name="PIN">2</field>
+						</shadow>
+					</value>
+					<value name="PIN2">
+						<shadow type="pins_digital">
+							<field name="PIN">3</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_A5_LED" name="编程遥控器_LED灯">
+				</block>
+
+				<block type="ArduBits_A5_CON" name="编程遥控器_蜂鸣震动">
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">255</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_A5_Rocker_FX" name="编程遥控器_摇杆方向">
+				</block>
+
+				<block type="ArduBits_A5_Rocker_FXDS" name="编程遥控器_摇杆行程">
+				</block>
+
+				<block type="ArduBits_A5_Rocker_ZL" name="编程遥控器_重力感应">
+				</block>
+
+				<block type="ArduBits_A5_Button" name="编程遥控器_按键数值">
+				</block>
+
+				<block type="ArduBits_A5_Sonser" name="编程遥控器_获取滑杆\声音\光敏\摇杆">
+				</block>
+
+				<block type="ArduBits_A5_Power" name="编程遥控器_获取电量">
+				</block>
+
+			</category>
+			<category id="ArduBitsCAR" name="智能车" colour="220">
+
+				<block type="ArduBits_Tadpole_Run" name="蝌蚪号行驶控制">
+					<value name="NUM">
+						<shadow type="math_number">
+							<field name="NUM">255</field>
+						</shadow>
+					</value>
+				</block>
+
+				<block type="ArduBits_Tadpole_Voice" name="蝌蚪号语音控制">
+				</block>
+
+				<block type="ArduBits_Tadpole_Avoid" name="蝌蚪号避障传感">
+				</block>
+
+				<block type="ArduBits_Tadpole_Line" name="蝌蚪号灰度巡线">
+				</block>
+
+				<block type="ArduBits_Tadpole_Power" name="蝌蚪号电池电量">
+				</block>
+
+
+
+			</category>
+		</category>
+	
